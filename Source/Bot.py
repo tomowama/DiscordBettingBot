@@ -1,14 +1,7 @@
 import discord.py
 
-
-
 import discord
-
-
-
-
     
-
 @client.event
 async def on_ready():
     client.loop.create_task(benScan())
