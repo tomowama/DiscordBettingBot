@@ -1,17 +1,14 @@
-import discord.py
-
-
-
 import discord
 
 
 
+client = discord.Client()
 
     
 
 @client.event
 async def on_ready():
-    client.loop.create_task(benScan())
+    
     print('We have logged in as {0.user}'.format(client))
 
 
@@ -22,4 +19,4 @@ async def on_message(message):
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
 
-client.run('TOKEN')
+client.run('OTYyNDU1MTI3ODI5MTMxMjk0.YlHyMA.dBSEzhwFMhI8nEXXs6iLXBPy0N8')
